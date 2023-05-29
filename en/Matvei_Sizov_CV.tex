@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Matvey Sizov
+% Based off of: https://github.com/wtkeqrf0/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	\textbf{\Huge \scshape Matvey Sizov} \\ \vspace{1pt}
+	\href{mailto:matvey-sizov@mail.ru}{\underline{matvey-sizov@mail.ru}} $|$ 
+	\href{https://t.me/bot4e}{\underline{t.me/bot4e}} $|$
+	\href{https://github.com/wtkeqrf0}{\underline{github.com/wtkeqrf0}}
+\end{center}
+
+% ----------SUMMARY----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{Back-end developer with 1 year of experience in building web applications using Golang and modern Golang tools/frameworks. 
+		I am interested in building usable, useful, well-constructed websites and applications. } \
+	}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Back-end developer\emph{}}{2022 -- Present}
+{Freelance}{Remote, Russia}
+\resumeItemListStart
+\resumeItem{Refactored back-end applications}
+\resumeItem{Developed Rest API}
+\resumeItem{Created an email newsletter}
+\resumeItem{Added new features to existing application}
+\resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/youtogether-online}{\underline{YouTogether}} $|$ \emph{Golang, PostgreSQL, Redis, OpenAPI, Docker, Github Actions}}{2023 -- Present}
+\resumeItemListStart
+\resumeItem{Made up the database structure}
+\resumeItem{Closely collaborated with front-end developer to meet the functional requirement}
+\resumeItem{Designed application API using OpenAPI specification}
+\resumeItem{Developed RestAPI with clean architecture}
+\resumeItem{Managed CI/CD using Github Actions and Docker}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ACTIVITIES-----------
+\section{Activities}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/wtkeqrf0/hackathon-backend}{\underline{Leaders Digital Transformations 2023}} $|$ \emph{Golang, PostgreSQL, Redis, Swagger, Docker, Github Actions}}{2023 May}
+\resumeItemListStart
+\resumeItem{Made up the database structure}
+\resumeItem{Set tasks for everyone in the team}
+\resumeItem{Created Swagger generation}
+\resumeItem{Developed RestAPI with clean architecture}
+\resumeItem{Managed CI/CD using Github Actions and Docker}
+\resumeItem{Calculated the approximate cost of the future enterprise}
+\resumeItem{Generated a PDF file from html template with calculated values}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Voronezh State Technical University}{Voronezh}
+{Computer Systems, Information Technology and Programming}{2021 -- 2025}
+\resumeSubHeadingListEnd
+
+% -----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Languages}{: Golang, Java, SQL, HTML} \\
+		\textbf{Databases}{: PostgreSQL, MySQL, Redis, MongoDB} \\
+		\textbf{Librares}{: Gin, Ent} \\
+		\textbf{Specifications}{: OpenAPI, AsyncAPI} \\
+		\textbf{Developer Tools}{: Git, Docker, VS Code, IntelliJ, CI/CD} \\
+	}}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
