@@ -1,0 +1,197 @@
+%-------------------------
+% Resume in Latex
+% Author : Matvey Sizov
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:matvey-sizov@mail.ru}{matvey-sizov@mail.ru}\\
+%   \href{https://t.me/bot4e}{https://t.me/bot4e} & Mobile : +79042951395 \\
+% \end{tabular*}
+
+\begin{center}
+	\textbf{\Huge \scshape Матвей Сизов} \\ \vspace{1pt}
+	\href{mailto:matvey-sizov@mail.ru}{\underline{matvey-sizov@mail.ru}} $|$ 
+	\href{https://t.me/bot4e}{\underline{t.me/bot4e}} $|$
+	\href{https://github.com/wtkeqrf0}{\underline{github.com/wtkeqrf0}}
+\end{center}
+
+% ----------SUMMARY----------
+\section{Обо мне}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{Back-end разработчик с опытом 1.5 года создания веб-приложений на Golang с использованием современных инструментов/фреймворков. Я заинтересован в создании удобных, действенных, хорошо сконструированных веб-сайтов и приложений.} \
+	}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Опыт}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Back-end разработчик\emph{}}{2022 -- Настоящий момент}
+{Фриланс}{Удалённо, Россия}
+\resumeItemListStart
+\resumeItem{Оптимизоровал работу back-end}
+\resumeItem{Разработал REST API}
+\resumeItem{Создал рассылку по email}
+\resumeItem{Добавил новые возможности работающим приложениям}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Проекты}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/youtogether-online}{\underline{YouTogether}} $|$ \emph{Golang, PostgreSQL, Redis, OpenAPI, Docker, Github Actions, WebSocket}}{2023 -- Настоящий момент}
+\resumeItemListStart
+\resumeItem{Составил стуктуру базы данных}
+\resumeItem{Тесно сотрудничал с front-end разработчиком для удовлетворения функциональных требований}
+\resumeItem{Разработал OpenAPI документацию}
+\resumeItem{Спроектировал API с чистой архитектурой}
+\resumeItem{Управлял CI/CD с помощью Github Actions и Docker}
+\resumeItem{Спроектировал взаимодействие сервера и пользователя по WebSocket соединению}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ACTIVITIES-----------
+\section{Деятельность}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/wtkeqrf0/CV/blob/main/Leaders_Digital_Transformations_2023.pdf}{\underline{Хакатон ЛЦТ 2023--7-ое место}} $|$ \emph{Golang, PostgreSQL, Redis, OpenAPI, Docker, PDF, CI/CD}}{2023 June}
+\resumeItemListStart
+\resumeItem{Составил стуктуру базы данных}
+\resumeItem{Поставил задачи перед всеми членами команды исходя из функциональных потребностей}
+\resumeItem{Спроектировал генерацию Swagger документации}
+\resumeItem{Спроектировал API с чистой архитектурой}
+\resumeItem{Управлял CI/CD с помощью Github Actions и Docker}
+\resumeItem{Рассчитывал примерную стоимость будущего предприятия}
+\resumeItem{Генерировал PDF-файл из html-шаблона}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Обучение}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Воронежский Государственный Технический Университет}{Воронеж}
+{Компьютерные системы, информационные технологии и программирование}{2021 -- 2025}
+\resumeSubHeadingListEnd
+
+% -----------PROGRAMMING SKILLS-----------
+\section{Технические навыки}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Языки}{: Golang, Java, SQL, HTML} \\
+		\textbf{Базы данных}{: PostgreSQL, MySQL, Redis, MongoDB} \\
+		\textbf{Библиотеки}{: Gin, Ent} \\
+		\textbf{Спецификации}{: OpenAPI, AsyncAPI} \\
+		\textbf{Инструменты разработки}{: Git, Docker, VS Code, IntelliJ, CI/CD} \\
+	}}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
