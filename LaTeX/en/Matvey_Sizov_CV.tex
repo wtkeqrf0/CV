@@ -53,7 +53,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -62,30 +62,30 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+        \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+        \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -99,7 +99,7 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%
 
 
 \begin{document}
@@ -111,19 +111,18 @@
 % \end{tabular*}
 
 \begin{center}
-	\textbf{\Huge \scshape Matvey Sizov} \\ \vspace{1pt}
-	\href{mailto:matvey-sizov@mail.ru}{\underline{matvey-sizov@mail.ru}} $|$ 
-	\href{https://t.me/bot4e}{\underline{t.me/bot4e}} $|$
-	\href{https://github.com/wtkeqrf0}{\underline{github.com/wtkeqrf0}}
+\textbf{\Huge \scshape Matvey Sizov} \\ \vspace{1pt}
+\href{mailto:matvey-sizov@mail.ru}{\underline{matvey-sizov@mail.ru}} $|$
+\href{https://t.me/bot4e}{\underline{t.me/bot4e}} $|$
+\href{https://github.com/wtkeqrf0}{\underline{github.com/wtkeqrf0}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Voronezh State Technical University}{Voronezh}
-{Computer Systems, Information Technology and Programming}{2021 -- 2025}
+{Computer systems, information technology and programming}{2021 -- 2025}
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -131,82 +130,59 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Backend Go developer (junior)\emph{}}{2023 April -- 2023 September}
-{Kaluga Sales Company}{Moscow, Russia}
+{Backend Go developer (junior)\emph{}}{2023 May -- 2023 April}
+{Kaluga Sales Company}{remote}
 \resumeItemListStart
-\resumeItem{Create the REST API structure using `chi`}
-\resumeItem{Designed an email distribution service}
-\resumeItem{Wrote a service for sending push notifications using Firebase and RabbitMQ (Android, iOS)}
-\resumeItem{Wrote services implementing methods of `1C` remote services}
-\resumeItem{Created services that interact with AlfaPay and SberPay REST API}
-\resumeItem{Actively interacted with the team leader}
-\resumeItem{Documented in detail and covered all created services with unit and table tests}
+\resumeItem{Designed the REST monolith architecture of the service}
+\resumeItem{Used Firebase and RabbitMQ to send notifications to user's devices}
+\resumeItem{Used PostgreSQL and Redis to interact with user data}
+\resumeItem{Implemented an already completed service on 1C as the basis of the user's cabinet}
+\resumeItem{Set up remote payment}
 \resumeItemListEnd
 
 \resumeSubheading
-{Backend Go developer (intern)\emph{}}{2022 June -- 2022 December}
+{Backend Java developer\emph{}}{2022 December -- 2023 May}
+{Regional Management Center}{Lipetsk, Russia}
+\resumeItemListStart
+\resumeItem{Improved soft skills by communicating with analysts, DevOps and team leader}
+\resumeItem{Worked on regional projects: \begin{enumerate}
+\item{Web application for rapid emergency response}
+\item{Web application for registration of a social contract remotely}
+\item{School nutrition assessment app (using QR-code)}
+\end{enumerate}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Backend Golang developer (intern)\emph{}}{2022 July -- 2022 December}
 {ZUZEX}{Moscow, Russia}
 \resumeItemListStart
-\resumeItem{Refactored and optimized the code}
-\resumeItem{Added new features to the API}
-\resumeItem{Found and fixed bugs in the code}
-\resumeItem{Actively interacted with other programmers}
-\resumeItem{Wrote tests}
+\resumeItem{Wrote clean code}
+\resumeItem{Added new features}
+\resumeItem{Created a lot of tests}
+\resumeItem{Compiled SQL queries}
 \resumeItemListEnd
 
-\resumeSubHeadingListEnd
-
-%-----------ACTIVITIES-----------
-\section{Activities}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\href{https://wtkeqrf0.github.io/CV/Leaders_Digital_Transformations_2023.pdf}{\underline{Leaders Digital Transformations 2023--7th place}} $|$ \emph{Go, PostgreSQL, Redis, OpenAPI, Docker, CI/CD}}{2023 June}
-\resumeItemListStart
-\resumeItem{Made up the database structure}
-\resumeItem{Set tasks for all team members based on functional needs}
-\resumeItem{Created Swagger generation}
-\resumeItem{Developed REST API with clean architecture}
-\resumeItem{Managed CI/CD using Github Actions and Docker}
-\resumeItem{Calculated the approximate cost of the future enterprise}
-\resumeItem{Generated a PDF file from html template}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\href{https://github.com/youtogether-online}{\underline{YouTogether}} $|$ \emph{Go, PostgreSQL, Redis, OpenAPI, Docker, Github Actions, WebSocket}}{2023 -- Present}
-\resumeItemListStart
-\resumeItem{Made up the database structure}
-\resumeItem{Closely collaborated with front-end developer to meet the functional requirement}
-\resumeItem{Designed application API using OpenAPI specification}
-\resumeItem{Developed RestAPI with clean architecture}
-\resumeItem{Managed CI/CD by Github Actions and Docker}
-\resumeItem{Designed the interaction of the server and the user over the WebSocket connection}
-\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 % -----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
+\section{Programming skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-		\textbf{Languages}{: Golang, Java, SQL, HTML} \\
-		\textbf{Databases}{: PostgreSQL, MySQL, Redis, MongoDB} \\
-		\textbf{Libraries}{: Gin, Ent, testing} \\
-		\textbf{Specifications}{: OpenAPI, AsyncAPI} \\
-		\textbf{Development Tools}{: Git, Docker, VS Code, IntelliJ, CI/CD} \\
-	}}
+\small{\item{
+\textbf{Programming Languages}{: Go, Java, SQL} \\
+\textbf{Databases}{: PostgreSQL, MySQL, MongoDB, Redis, ClickHouse} \\
+\textbf{Message brokers}{: Apache Kafka, RabbitMQ} \\
+\textbf{API types}{: REST, gRPC, GraphQL} \\
+\textbf{Development tools}{: Linux, Git, Docker, VS Code, IntelliJ, CI/CD} \\
+}}
 \end{itemize}
 
 % ----------SUMMARY----------
 \section{Summary}
 \begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{Back-end developer with 1.5 years of experience in building web applications using Go and modern tools/frameworks. I am interested in building usable, useful, well-constructed websites and applications. } \
+\small{\item{A back-end developer that specializes on create and design services in Go. I am always glad for new tasks and discoveries.} \
 }
 \end{itemize}
 
 %----------------------------
-
 
 \end{document}
